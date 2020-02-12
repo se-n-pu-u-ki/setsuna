@@ -1,0 +1,16 @@
+img{
+    width:200px;
+    height:100px;
+    }
+    
+.css {
+    font-family:"sans-serif",
+    
+}
+.list{
+    background-color:lightblue;
+}
+.listName{
+    text-align:center;
+    vertical-align:center;
+}

@@ -1,0 +1,50 @@
+.parent {
+    display: inline-block;
+    width:100%;
+    height:80%;
+    background:linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+.user1,.user2, .user3, .user4{
+    font-family: sans-serif;
+    border: 5px solid greenyellow;
+    font-size:15px;
+
+}
+.user1{
+    float:left;
+    text-align: center;
+    margin-top:10%;
+    margin-right:10%;
+    margin-left:20%;
+
+}
+.user2{
+    float:right;
+    text-align: center;
+    margin-top:10%;
+    margin-right:20%;
+    margin-left:10%;
+}
+.user3{
+    float:left;
+    text-align: center;
+    margin-right:10%;
+    margin-left:20%;
+    margin-bottom:30%;
+}
+.user4{
+    float:right;
+    text-align: center;
+    margin-right:20%;
+    margin-left:10%;
+    margin-bottom:30%;
+}
+.Timer{
+    text-align: center;
+    margin-top:30%;
+    margin-bottom:30%;
+}
+.user1 img,.user2 img,.user3 img, .user4 img  {
+    width:70px;
+    height:70px;
+}
