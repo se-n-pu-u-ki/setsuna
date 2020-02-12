@@ -1,24 +1,24 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-
+// import Pages 
 import Column from '../Pages/Column/index';
 import Feedback from '../Pages/Feedback/index';
 import Match from '../Pages/Match/index';
 import Mypage from '../Pages/Mypage/index';
 import Result from '../Pages/Result/index';
-
+// import icons
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import GroupAddRoundedIcon from '@material-ui/icons/GroupAddRounded';
 import FeedbackRoundedIcon from '@material-ui/icons/FeedbackRounded';
 import ViewColumnRoundedIcon from '@material-ui/icons/ViewColumnRounded';
 import TrendingUpRoundedIcon from '@material-ui/icons/TrendingUpRounded';
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-
+// style
 const useStyles = makeStyles(theme => ({
   toolbar: {
     borderBottom: `3px solid ${theme.palette.divider}`,
@@ -27,23 +27,19 @@ const useStyles = makeStyles(theme => ({
 
   },
   toolbarTitle: {
-    width:"20%",
+    width:"15%",
     height:'60px',
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
     fontFamily:'arial black',
-    fontSize:"20px"	
+    fontSize:"16px"	,
 
   },
-  toolbarLink: {
-    padding: theme.spacing(1),
-    flexShrink: 0,
-  },
-  sighup:{
+  signup:{
     background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-    width:"20%"
+    width:"20%",
   },
   tabs:{
-    width:"10%",
+    width:"5%",
     height:"30px",
     background: 'white',
     fontFamily:'arial black',
