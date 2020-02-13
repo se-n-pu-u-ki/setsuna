@@ -9,19 +9,18 @@ class Mypage extends React.Component {
         const name = "鈴木萌斗"
         return(
             <div className='Mypage'>
-                <img src={profileImg} alt="face photo"/>
-                <h1 className="userName">{name}</h1>
-
+                <div className="profile">
+                    <img src={profileImg} alt="face photo"/>
+                    <h1 className="userName">{name}</h1>
+                </div>
                 <div className="challengeList">
-                <h3>Challenge List</h3>
-                    <li>
-                        {chalengeListArr.map(listName=> {
-                            return( 
-                                <div className="list">
-                                    <ul><CheckboxLabels listName={listName}/></ul>
-                                </div>
-                         ) })}
-                    </li>
+                <h2>Challenge List！</h2>
+                    {chalengeListArr.map(listName=> {
+                        return( 
+                            <div className="list">
+                                <ul><CheckboxLabels listName={listName}/></ul>
+                            </div>
+                        ) })}
                 </div>
 
             </div>
