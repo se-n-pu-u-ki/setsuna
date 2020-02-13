@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/core/Slider';
-import Typography from '@material-ui/core/Typography';
 import Tooltip from '@material-ui/core/Tooltip';
 
 const useStyles = makeStyles(theme => ({
@@ -16,9 +15,12 @@ const useStyles = makeStyles(theme => ({
 
 function ValueLabelComponent(props) {
   const { children, open, value } = props;
-
   return (
-    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}>
+    <Tooltip open={open} enterTouchDelay={0} placement="top" title={value}
+    step={10}
+    marks
+    min={10}
+    max={110}>
       {children}
     </Tooltip>
   );
@@ -65,10 +67,11 @@ export default function CustomizedSlider() {
 
   return (
     <div className={classes.root}>
-      
-      <Typography gutterBottom>pretto.fr</Typography>
-      <PrettoSlider valueLabelDisplay="auto" aria-label="pretto slider" defaultValue={20} />
-      
+      <PrettoSlider valueLabelDisplay="auto" aria-label="pretto slider" defaultValue={3}     
+      step={1}
+        marks
+        min={1}
+        max={5}/> 
     </div>
   );
 }
