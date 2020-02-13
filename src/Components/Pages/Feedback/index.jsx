@@ -1,6 +1,7 @@
 import React from 'react';
 import ValueLabelComponent from "../../MaterialUiParts/ValueLabelComponent";
 import img2 from '../../../Images/Moeto2.jpg'
+import './index.css'
 
 class Feedback extends React.Component{
     render(){
@@ -8,24 +9,24 @@ class Feedback extends React.Component{
         return(
             <div>
                 <img src={img2} alt="顔写真"/>
-                <ul>
-                        話の内容 <br/>
+                <ul className="feedbackList">
+                        <p>話の内容</p>
                         <ValueLabelComponent />
-                        使う言葉 <br/>
+                        <p>使う言葉 </p>
                         <ValueLabelComponent />
-                        ジェスチャー <br/>
+                        <p>ジェスチャー</p>
                         <ValueLabelComponent />
-                        表情 <br/>
+                        <p>表情</p>
                         <ValueLabelComponent />
-                        声の調子 <br/>
+                        <p>声の調子</p>
                         <ValueLabelComponent />
-                        促す <br/>
+                        <p>促す</p>
                         <ValueLabelComponent />
-                        姿勢 <br/>
+                        <p>姿勢</p>
                         <ValueLabelComponent />
-                        質問 <br/>
+                        <p>質問</p>
                         <ValueLabelComponent />
-                        相手の非言語 <br/>
+                        <p>相手の非言語</p>                        
                         <ValueLabelComponent />
                 </ul>
 
