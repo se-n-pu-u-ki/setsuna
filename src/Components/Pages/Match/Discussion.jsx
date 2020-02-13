@@ -7,22 +7,25 @@ import img2 from "../../../Images/Moeto2.jpg";
 import img3 from "../../../Images/Moeto3.jpg";
 import img4 from "../../../Images/Moeto4.jpg";
 
+import AlarmIcon from '@material-ui/icons/Alarm';
+import Button from '@material-ui/core/Button';
+
 class Discussion extends React.Component {
     render(){
         const user1 = {
-            name: "鈴木萌斗"
+            name: "もえやん"
         }
         const user2 = {
-            name: "道下実紀"
+            name: "みっちー"
         }
         const user3 = {
-            name: "坂本恭平"
+            name: "きょん！"
         }
         const user4 = {
-            name: "大隈拓海"
+            name: "たくみん"
         }
         return (
-            <div>
+            <div className="discussion">
                 <div className="parent">
                     <div className="user1">
                         <img src={img1} alt="user1.image"/>
@@ -36,10 +39,11 @@ class Discussion extends React.Component {
                     </div>
 
                     <div className='Timer'>
+                        <AlarmIcon color="secondary"/>
                     <Timer minutes={'00'} seconds={'00'} ref='timer' />
                     <div className='timer-button-container'>
-                        <TimerButton text={'START'} handleClick={() => this.refs.timer.start()} />
-                        <TimerButton text={'STOP'} handleClick={() => this.refs.timer.stop()} />
+                        <Button variant="outlinedSecondary"><TimerButton text={'START'} handleClick={() => this.refs.timer.start()} /></Button>
+                        <Button variant="outlinedSecondary"><TimerButton text={'STOP'} handleClick={() => this.refs.timer.stop()} /></Button>
                         {/* <TimerButton text={'RESET'} handleClick={() => this.refs.timer.reset()} /> */}
                     </div>
                 </div>
