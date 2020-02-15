@@ -11,23 +11,23 @@ class Feedback extends React.Component{
                 <img src={img2} alt="顔写真"/>
                 <ul className="feedbackList">
                         <p>話の内容</p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>使う言葉 </p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>ジェスチャー</p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>表情</p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>声の調子</p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>促す</p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>姿勢</p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>質問</p>
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                         <p>相手の非言語</p>                        
-                        <ValueLabelComponent />
+                        <ValueLabelComponent className = "slider" />
                 </ul>
 
             </div>
