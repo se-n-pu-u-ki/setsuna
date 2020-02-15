@@ -3,15 +3,21 @@ import React from 'react'
 export class Timer extends React.Component {
   constructor () {
     super()
-    this.state = { minutes: '05', seconds: '00', time: 7500}
+    this.state = { minutes: '05', seconds: '00', time: 7500,isOn:false}
   }
 
   start () {
-    this.intervalTimer = setInterval(() => this.update(), 1000)
+    if(!this.state.isOn){
+      this.intervalTimer = setInterval(() => this.update(), 1000)
+      this.setState({isOn:true})
+    }
   }
 
   stop () {
-    clearInterval(this.intervalTimer)
+    if(this.state.isOn){
+      clearInterval(this.intervalTimer)
+      this.setState({isOn:false})
+    }
   }
 
 //   reset () {
