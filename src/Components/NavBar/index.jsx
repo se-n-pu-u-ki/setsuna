@@ -11,6 +11,7 @@ import Feedback from '../Pages/Feedback/index';
 import Match from '../Pages/Match/index';
 import Mypage from '../Pages/Mypage/index';
 import Result from '../Pages/Result/index';
+import InitialSetting from '../Pages/InitialSettings/index';
 // import icons
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import GroupAddRoundedIcon from '@material-ui/icons/GroupAddRounded';
@@ -63,7 +64,7 @@ export default function NavBar() {
         <NavLink to="Result"><Button className={classes.tabs}><TrendingUpRoundedIcon /></Button></NavLink>
         <IconButton>
         </IconButton>
-        <Button variant="outlined" size="small" className={classes.signup}>Sign up</Button>
+        <NavLink to="InitialSetting"><Button variant="outlined" size="small" className={classes.signup}>Sign up</Button></NavLink>
       </Toolbar>
           <div className="mainpageArea">
             <Route exact path="/" component={Mypage}></Route>
@@ -72,6 +73,7 @@ export default function NavBar() {
             <Route path="/Column" component={Column}></Route>
             <Route path="/Feedback" component={Feedback}></Route>
             <Route path="/Result" component={Result}></Route>
+            <Route path="/InitialSetting" component={InitialSetting}></Route>
           </div>
       </Router>
 
