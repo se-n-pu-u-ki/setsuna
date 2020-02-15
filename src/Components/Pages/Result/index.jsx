@@ -8,21 +8,21 @@ class Result extends React.Component{
         return(
             <React.Fragment>
                 
-            　　<div class="horizontal_scroll_wrap">
-                    <ul class="scroll_lst">
-                        <li class="scroll_item">
+            　　<div className="horizontal_scroll_wrap">
+                    <ul className="scroll_lst">
+                        <li className="scroll_item">
                             <ApexChart />
                         </li>
-                        <li class="scroll_item">
+                        <li className="scroll_item">
                             <ApexChart />
                         </li>
-                        <li class="scroll_item">
+                        <li className="scroll_item">
                             <ApexChart />
                         </li>
-                        <li class="scroll_item">
+                        <li className="scroll_item">
                             <ApexChart />
                         </li>
-                        <li class="scroll_item">
+                        <li className="scroll_item">
                             <ApexChart />
                         </li>
                     </ul>

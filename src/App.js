@@ -20,7 +20,6 @@ class App extends React.Component {
   }
   componentDidMount() {
     firebase.auth().onAuthStateChanged(user => {
-      
       if(user){
       this.setState({
         isLogin: true,
@@ -29,7 +28,10 @@ class App extends React.Component {
     });
   }
 
+
   render(){
+    // return(<SignIn />)
+
     if(this.state.isLogin){
     return (
       <div className="App">
@@ -41,7 +43,9 @@ class App extends React.Component {
       <SignIn />
       )
     }
-  }
+
+   }
+
 }
 
 export default App;
