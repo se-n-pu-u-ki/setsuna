@@ -1,4 +1,7 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
+import InputAdornments from '../../MaterialUiParts/InputAdornments'
+import './index.css'
 
 class InitialSetting extends React.Component {
     render(){
@@ -6,10 +9,10 @@ class InitialSetting extends React.Component {
             <div className='InitialSetting'>
 
                 <p>ニックネーム</p>
-                <textarea name="name" id="" cols="10" rows="1"></textarea>
+                <TextField id="filled-basic" label="Filled" variant="filled" />
 
                 <p>年齢</p>
-                <textarea name="" id="" cols="10" rows="1"></textarea>
+                <TextField id="filled-basic" label="Filled" variant="filled" />
                 <p>性別</p>
 
                 <select name="sex">
@@ -18,10 +21,10 @@ class InitialSetting extends React.Component {
                 </select>
 
                 <p>メールアドレス</p>
-                <textarea name="mailaddress" id="" cols="30" rows="1"></textarea>
+                <TextField id="filled-basic" label="Filled" variant="filled" />
 
                 <p>パスワード</p>
-                <textarea name="password" id="" cols="30" rows="1"></textarea>
+                <InputAdornments /><br />
                 
                 <a href="#">登録</a>
             </div>
