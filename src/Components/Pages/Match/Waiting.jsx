@@ -5,7 +5,9 @@ export default class Waiting extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <Button variant="contained" color="secondary" size="large">Go！</Button>
+                {/* <Button variant="contained" color="secondary" size="large" > */}
+                    <a href="setsuna://"> Go！</a>
+                    {/* </Button> */}
             </React.Fragment>
         )
     }
