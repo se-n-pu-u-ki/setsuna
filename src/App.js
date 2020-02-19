@@ -7,8 +7,7 @@ import SignIn from './Components/Pages/SignIn/index'
 import firebase from "firebase/app"
 import "firebase/auth"
 import "firebase/firestore"
-import  config  from './plugins/config';
-firebase.initializeApp(config);
+import  { firestore }  from './plugins/firebase';
 
 
 class App extends React.Component {
@@ -30,22 +29,21 @@ class App extends React.Component {
 
 
   render(){
-    // return(<SignIn />)
+    return(<SignIn />)
 
-    if(this.state.isLogin){
-    return (
-      <div className="App">
-        <NavBar />
-      </div>
-    );
-    }else{
-      return(
-      <SignIn />
-      )
-    }
-
+    // if(this.state.isLogin){
+    // return (
+    //   <div className="App">
+    //     <NavBar />
+    //   </div>
+    // );
+    // }
+    // else{
+    //   return(
+    //   <SignIn />
+    //   )
+    // }
    }
-
 }
 
 export default App;
