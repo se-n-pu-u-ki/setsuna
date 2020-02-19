@@ -1,10 +1,11 @@
 import React from "react";
+import './Waiting.css'
 
 export default class Waiting extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <p>しばしお待ちをwww</p>
+                <a href="setuna://">Go!</a>
             </React.Fragment>
         )
     }

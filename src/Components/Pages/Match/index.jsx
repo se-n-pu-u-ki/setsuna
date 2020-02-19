@@ -16,6 +16,6 @@ export default class Match extends React.Component{
         
         // return({match})
         
-        return(<Discussion />)
+        return(<Waiting />)
     }
 }

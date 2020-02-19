@@ -10,14 +10,6 @@ import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-      width: 200,
-    },
-  },
-}));
 
 class SignIn extends React.Component{
 
@@ -38,11 +30,11 @@ class SignIn extends React.Component{
               firebase.auth.EmailAuthProvider.PROVIDER_ID,
             ]
           };
-          const classes = useStyles();
+          
 
         return(
             <React.Fragment>
-                <form className={classes.root} noValidate autoComplete="off">
+                <form  noValidate autoComplete="off">
                 <p>Please sign-in:</p>
                 <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
                 
@@ -58,7 +50,6 @@ class SignIn extends React.Component{
                 </select>
                 <a href="#">登録</a>
                 </div>
-
                 </form>
               </React.Fragment>
         )
