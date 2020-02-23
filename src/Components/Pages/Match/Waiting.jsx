@@ -5,8 +5,7 @@ export default class Waiting extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <button className="btn-real" type="button" onclick="location.href='setuna://'">Join！</button>
-                
+                <a href="location.href='setuna://'" className="btn-real">ディスカッションを始める</a>                
             </React.Fragment>
         )
     }
