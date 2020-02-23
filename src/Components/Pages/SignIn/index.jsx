@@ -85,33 +85,29 @@ class SignIn extends React.Component{
 
 
     render(){
-      
         return(
-            <React.Fragment>
-        <form>
-        <TextField  label="名前" 
-         value= {this.state.name} 
-         onChange={(event)=>{this.getName(event)}}/> 
-         <br/>
+          <React.Fragment>
+            <form>
+              <TextField  label="名前" 
+              value= {this.state.name} 
+              onChange={(event)=>{this.getName(event)}}/> 
+              <br/>
 
-         <TextareaAutosize 
-         aria-label="住所" 
-         rowsMax={4} 
-         placeholder="住所" 
-         value= {this.state.address} 
-         onChange={(event)=>{this.getAddress(event)}}
-         />;
-         <br/>
-
-         <input type = "file" 
-         onChange={(event)=>{this.getImage(event)}}>
-         </input>
-         <br/>
-
-        <Button variant="contained" color="primary" onClick={this.addData}>登録</Button>
-        
-        </form>
-              </React.Fragment>
+              <TextareaAutosize 
+              aria-label="住所" 
+              rowsMax={4} 
+              placeholder="住所" 
+              value= {this.state.address} 
+              onChange={(event)=>{this.getAddress(event)}}
+              />;
+              <br/>
+              <input type = "file" 
+              onChange={(event)=>{this.getImage(event)}}>
+              </input>
+              <br/>
+              <Button variant="contained" color="primary" onClick={this.addData}>登録</Button>
+            </form>
+            </React.Fragment>
         )
     }
 }

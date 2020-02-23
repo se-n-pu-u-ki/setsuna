@@ -70,14 +70,15 @@ class App extends React.Component{
     this.setState({
       name: '',
       address: '',
-    });
+    })
+    ;
   })
-   let storageRef = firebase.storage().ref().child(this.state.name+`.png`);
-   storageRef.put(this.state.image)
-   .then(function(snapshot) {
-    alert("送信されました");
-   });
-   console.log("登録ボタン");
+  //  let storageRef = firebase.storage().ref().child(this.state.name+`.png`);
+  //  storageRef.put(this.state.image)
+  //  .then(function(snapshot) {
+  //   alert("送信されました");
+  //  });
+  //  console.log("登録ボタン");
   }
 
 
@@ -105,6 +106,30 @@ class App extends React.Component{
       successfulUser=(
         <div className="App">
           <Button variant="contained" color="secondary" onClick={this.logOut}>ログアウト</Button> 
+          
+          <React.Fragment>
+            <form>
+              <TextField  label="名前" 
+              value= {this.state.name} 
+              onChange={(event)=>{this.getName(event)}}/> 
+              <br/>
+
+              <TextareaAutosize 
+              aria-label="住所" 
+              rowsMax={4} 
+              placeholder="住所" 
+              value= {this.state.address} 
+              onChange={(event)=>{this.getAddress(event)}}
+              />;
+              <br/>
+              <input type = "file" 
+              onChange={(event)=>{this.getImage(event)}}>
+              </input>
+              <br/>
+              <Button variant="contained" color="primary" onClick={this.addData}>登録</Button>
+            </form>
+            </React.Fragment>
+
             <NavBar />
         </div>
         
@@ -117,7 +142,7 @@ class App extends React.Component{
 
         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
         
-        <SignIn />
+        
         </div>
        );
       }   
