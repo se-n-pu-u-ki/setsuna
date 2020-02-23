@@ -1,5 +1,5 @@
 
-const config = {
+const appConfig = {
     apiKey: "AIzaSyDwbOrPDByQb8wmRhbjCClYrLYbk1tSzok",
     authDomain: "setsuna-firebasetest.firebaseapp.com",
     databaseURL: "https://setsuna-firebasetest.firebaseio.com",
@@ -10,4 +10,4 @@ const config = {
     measurementId: "G-84E9QM6DXX"
   };
   
-  export default config;
+  export default appConfig;
